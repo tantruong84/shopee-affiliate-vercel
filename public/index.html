@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Công cụ chuyển đổi link sản phẩm Shopee sang link Affiliate.">
+  <title>Chuyển đổi link Shopee Affiliate</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="page-title">
+      <div class="brand-mark" aria-hidden="true">S</div>
+      <p class="eyebrow">CÔNG CỤ TIẾP THỊ LIÊN KẾT</p>
+      <h1 id="page-title">Chuyển đổi link Shopee</h1>
+      <p class="intro">Dán link sản phẩm Shopee để tạo link Affiliate.</p>
+
+      <form id="convert-form">
+        <label for="product-url">Link sản phẩm Shopee</label>
+        <textarea id="product-url" name="url" rows="3" maxlength="2048"
+          placeholder="https://shopee.vn/..." autocomplete="url" required></textarea>
+        <p class="hint">Chỉ nhập link Shopee mà bạn muốn chuyển đổi.</p>
+        <button id="convert-button" type="submit">Chuyển đổi link</button>
+      </form>
+
+      <section id="status-panel" class="status hidden" role="status" aria-live="polite">
+        <p id="status-title" class="status-title"></p>
+        <p id="status-message"></p>
+      </section>
+
+      <section id="result-panel" class="result hidden" aria-labelledby="result-title">
+        <label id="result-title" for="result-url">Link Affiliate</label>
+        <div class="result-row">
+          <input id="result-url" type="text" readonly>
+          <button id="copy-button" class="secondary" type="button">Sao chép</button>
+        </div>
+      </section>
+
+      <p class="disclaimer">
+        Website độc lập, không phải ứng dụng chính thức của Shopee.
+        Link Affiliate chỉ được tạo khi máy chủ đã cấu hình Open API hợp lệ.
+      </p>
+    </section>
+    <footer>Vui lòng tuân thủ điều khoản Shopee Affiliate và công khai thông tin liên kết khi cần.</footer>
+  </main>
+</body>
+</html>
